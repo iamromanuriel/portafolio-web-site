@@ -1,0 +1,126 @@
+:root{
+    --background-navbar-color:#34495e;
+    
+    --background-one-color:#7878FF;
+    --background-two-color:#FFB791;
+    --background-Three-color: #84FFEE;
+    --background-four-color:#4242B3;
+    --background-five-color:#63B34B;
+}
+.datel{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.datel > h1{
+    font-size: 30px;
+}
+span{
+    font-size: 60px;
+    
+}
+p.ocupation{
+    font-size: 30px;
+}
+/*skins*/
+.icon_skins{
+    margin: 12px 0px 12px 0px;
+    width: 120px;
+}
+.skins_title{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+.skins_title > p {
+    font-size: 30px;
+}
+.container_skin{
+    display: flex;
+    justify-content: space-around;
+}
+.skin{
+    width: 300px;
+    margin: 10px;
+    border-width: 0.2px;
+    border-radius: 5px;
+}
+.skin:hover{
+    border-color: #8b8b8b;
+    box-shadow: 2px 2px 5px #999
+    
+}
+.title_skin > h3{
+    padding: 5px;
+}
+li{
+    padding: 5px 0px 0px 5px;
+}
+
+/*MyWorks*/
+.container_work{
+    margin: 10% 0% 5% 0%;
+    text-align: center;
+    position: relative;
+    align-items: center;
+}
+.containe_tittle_work > p{
+    font-size: 30px;
+    padding: 10px 0px 10px 0px ;
+}
+.container_pomd > img{
+    width: 60%;
+}
+
+/*footer*/
+
+footer{
+    background: var(--background-one-color);
+    padding: 60px 0 30px 0 ;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.contenet-foo{
+    text-align: center;
+}
+.contenet-foo h4{
+    color: #fff;
+    border-bottom: 3px solid var(--background-four-color);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+}
+
+.contenet-foo p{
+    color: #ccc;
+    border-bottom: 3px solid var(--background-four-color);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: white;
+    
+}
+.container_redes{
+    display: flex;
+}
+.container_redes > a{
+    width: 40%;
+    margin-left: 10px;
+}

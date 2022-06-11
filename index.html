@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navstyle.css">
+    <link rel="stylesheet" href="css/progressbar.css">
+    <link rel="stylesheet" href="css/aboutme.css">
+    <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c1eae85dfa.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <title>Roman</title>
+</head>
+<body>
+    <!-- container loader-->
+    <div class="contenedor_loader">
+        <div class="loader"></div>
+    </div>
+    <!-- Nav container --->
+    <nav>
+        <img id="mainbutton" class="logo" src="image/icon.png">
+        <ul>
+            <li><a id="button_home" class="active" href="#">Home</a></li> 
+            <li><a id="buttonabout" href="#skins">Habilidades</a></li> 
+            <li><a href="#myworks">Portafolio</a></li> 
+            <li><a href="#contacts">Contact</a></li> 
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+    <!-- Section about -->
+
+    <div class="datel">
+        <h1>Hola <br> <span>Soy Roman</span> </h1>
+        <p class="ocupation">Desarrollador de Software</p>
+        <br>
+        <p>Soy un aficionado de la tecnologia y es increible poder crear <br>
+            herramientas que hacen mas facil la vida y trabajo de muchas personas.
+
+        </p>
+    </div>
+
+    <!--Section skins-->
+
+    <div class="skins_title" id="skins"><p>Habilidades</p></div>
+    <div class="container_skin">
+        <div class="skin">
+            <div class="title_skin">
+                <img class="icon_skins" src="image/code.png" alt="">
+                <h3>Lenguajes de programación</h3>
+            </div>
+            <div class="list_skin">
+                <ul>
+                    <li>Java</li>
+                    <li>Kotlin</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+        </div>
+        <div class="skin">
+            <div class="title_skin">                    
+            <img class="icon_skins" src="image/database.png" alt="">
+                <h3>Base de datos</h3>
+            </div>
+            <div class="list_skin">
+                <ul>
+                    <li>Firebase</li>
+                    <li>SQL</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+        </div>
+        <div class="skin">
+            <div class="title_skin">
+                <img class="icon_skins" src="image/tools.png" alt="">
+                <h3>Herramientas</h3></div>
+            <div class="list_skin">
+                <ul>
+                    <li>Android Studio</li>
+                    <li>Git</li>
+                    <li>Visual Studio</li>
+                    <li>Microsoft Office</li>
+                    <li>Adobe XD</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Photoshop</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--MyWorks-->
+    <div class="container_work" id="myworks">
+        <div class="containe_tittle_work">
+            <p>Pomd: Pueblos de Mexico</p>
+        </div>
+        <div class="container_pomd">
+            <img src="image/Smartphone.png" alt="">
+        </div>
+        <div class="container_description">
+            <p><a href="https://play.google.com/store/apps/details?id=com.roman.pomd" target="_blank">Más...</a></p>
+        </div>
+    </div>
+    <!--Footer-->
+
+    <footer id="contacts">
+        <div class="contenedor-footer">
+            <div class="contenet-foo">
+                <h4>Email</h4>
+                <p>romanufranciscomartinez@gmail.com</p>
+            </div>
+            <div class="contenet-foo">
+                <h4>Redes sociales</h4>
+                <div class="container_redes">
+                    <a href="https://github.com/iamromanuriel" target="_blank">
+                        <img src="image/iconmonstr-github-4-64.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/roman-uriel-francisco-martinez-822320236" target="_blank">
+                        <img src="image/iconmonstr-linkedin-5-64.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h2 class="titulo-final">Roman Uriel Francisco Martinez</h2>
+    </footer>
+    <script src="script/progressbar.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
