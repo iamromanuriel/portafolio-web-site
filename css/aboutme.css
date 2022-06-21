@@ -6,58 +6,65 @@
     --background-Three-color: #84FFEE;
     --background-four-color:#4242B3;
     --background-five-color:#63B34B;
+    
+    --background-card-color:#d4d4d4;
 }
 .datel{
-    margin-left: 8%;
-    margin-top: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-
-.datel > h1{
-    font-size: 30px;
+.datel > div {
+    margin: 10%;
 }
-span{
+.saludo > h1{
     font-size: 60px;
-    
 }
-p.ocupation{
+.saludo > h1 > span{
     font-size: 30px;
+}
+.saludo > p{
+    font-size: large;
 }
 /*skins*/
-.icon_skins{
-    margin: 12px 0px 12px 0px;
-    width: 120px;
-}
 .skins_title{
-    margin-top: 15%;
-    margin-bottom: 5%;
     text-align: center;
-    padding: 10px 0px 10px 0px;
-}
-.skins_title > p {
     font-size: 30px;
+    font-style: inherit;
+    
 }
 .container_skin{
     display: flex;
     justify-content: space-around;
 }
 .skin{
-    width: 300px;
-    margin: 10px;
-    border-width: 0.2px;
+    background: var(--background-one-color);
+    width: 200px;
+    padding: 3%;
+    margin: 5%;
     border-radius: 5px;
-}
-.skin:hover{
-    border-color: #8b8b8b;
-    box-shadow: 2px 2px 5px #999
-    
-}
-.title_skin > h3{
-    padding: 5px;
-}
-li{
-    padding: 5px 0px 0px 5px;
+    box-shadow: 5px 5px 5px  #b6c2cf;
 }
 
+.title_skin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title_skin > *{
+    margin: 5px;
+}
+.title_skin > h3{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list_skin > *{
+    color: white;
+}
+li{
+    list-style: disc;
+}
 /*MyWorks*/
 .container_work{
     margin: 10% 0% 5% 0%;
@@ -123,4 +130,23 @@ footer{
 .container_redes > a{
     width: 40%;
     margin-left: 10px;
+}
+
+@media (max-width: 909px){
+    .datel{
+        display: block;
+    }
+}
+
+@media (max-width: 600px){
+    .container_skin{
+        display: block;
+    }
+    .skin{
+        width: 80%;
+        margin: 10px 40px 10px 40px;
+    }
+    .list_skin{
+        padding: 0px 0px 0px 10px;
+    }
 }

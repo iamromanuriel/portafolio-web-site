@@ -1,7 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    text-decoration: none;
     list-style: none;
 }
 :root{    
@@ -41,6 +40,7 @@ nav a{
     border: 1px  solid transparent;
     padding: 7px 10px;
     border-radius: 3px;
+    text-decoration: none;
 }
 a.active, a:hover{
     border: 1px solid var(--background-one-color);
