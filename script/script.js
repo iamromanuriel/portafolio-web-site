@@ -4,12 +4,12 @@ const buttonhome = document.getElementById("button_home");
 
 //EVENTOS
 
-button.addEventListener("click", reload);
+button.addEventListener("click", reloader);
 iconnavbar.addEventListener('click',navbarbutton);
-buttonhome.addEventListener('click',reload)
+buttonhome.addEventListener('click',reloader)
 //FUNCIONES
 
-function reload (){
+function reloader (){
     location.reload();
 }
 
