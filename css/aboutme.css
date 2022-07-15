@@ -23,7 +23,9 @@
     --padding-btn: 20px 35px;
     --height--shape:18em;
 }
-
+main{
+    background-color: white;
+}
 .container{
     width: var(--width-container);
     max-width: var(--max-width-comtainer);
@@ -79,7 +81,7 @@
 /*the final update*/
 body{
     font-family: 'Inter', sans-serif;
-    background-color: #E5E5F7;
+    background-color: #bdbdf5;
     background-size: 28px 28px;
     background-position: 0 0,14px 14px;
 }
@@ -122,7 +124,7 @@ body{
 }
 
 .list_skin > *{
-    color: black
+    color: black;
 }
 li{
     list-style: disc;

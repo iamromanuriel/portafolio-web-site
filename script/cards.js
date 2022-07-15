@@ -1,8 +1,14 @@
 const containermain = document.getElementById('container');
+const containercards = document.createElement("div");
+const titleskin = document.createElement("h2");
+titleskin.classList.add("title__skin");
+titleskin.textContent = "Habilidades";
+containermain.appendChild(titleskin);
+containermain.appendChild(containercards);
 
 var json = [
     {
-        "title": "Lengueje de programacion",
+        "title": "Lenguejes de programación",
         "elements":[
             "Java",
             "Kotlin",
@@ -10,7 +16,7 @@ var json = [
         ]
     },
     {
-        "title": "Base da datos",
+        "title": "Base de datos",
         "elements":[
             "SQL",
             "MONGODB",
@@ -28,37 +34,34 @@ var json = [
 ]
 
 json.forEach(function(element){
-    createElement(element.title)
+    createElement(element.title, element.elements)
 })
 
 
 
 //create elements
 
-function createElement(name){
+function createElement(name, listelemento){
     const card = document.createElement("div");
     const leftcolumn = document.createElement("div");
     const rightcolumn = document.createElement("div");
     const div = document.createElement("div");
+    const containerlist = document.createElement("div");
 
     const h6 = document.createElement("h6");
     const h2 = document.createElement("h2");
     const img = document.createElement("img");
+    const listskin = document.createElement("ul");
 
     const dificult = document.createElement("h4");
     const medida = document.createElement("h6");
-    const aprende = document.createElement("h2");
-    const parrafo = document.createElement("p");
 
-    h6.textContent = "Control de versiones";
+    h6.textContent = name;
     h2.textContent = "Github";
     img.src  = '/image/1DESIGN.png';
     
-    dificult.textContent = name;
+    dificult.textContent = "Dificultad";
     medida.textContent = "Media - baja";
-    aprende.textContent = "Aprende Github en semanas";
-    parrafo.textContent = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere fuga quis suscipit nemo, et cum neque? Veritatis consequuntur laborum eos!";
-
     leftcolumn.appendChild(h6);
     leftcolumn.appendChild(h2);
     leftcolumn.appendChild(img);
@@ -68,16 +71,26 @@ function createElement(name){
     
     div.appendChild(dificult);
     div.appendChild(medida);
-    div.appendChild(aprende);
-    div.appendChild(parrafo);
     card.appendChild(rightcolumn);
+    listelemento.forEach(function(skin){
+        console.log(skin)
+        let myskin = document.createElement("li");
+        myskin.textContent = skin;
+        listskin.appendChild(myskin);
+    })
+
+    rightcolumn.appendChild(listskin)
+    
+
+
     //add class
-    containermain.classList.add("container");
+    containercards.classList.add("container__card");
     card.classList.add("card");
     leftcolumn.classList.add("left-column");
     rightcolumn.classList.add("right-column");
 
-    containermain.appendChild(card);
+    
 
-    containermain.classList.add("container");
+    containercards.appendChild(card);
+
 }
