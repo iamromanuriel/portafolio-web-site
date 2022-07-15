@@ -74,3 +74,9 @@
 ul > *{
     color: #161b38;
 }
+
+@media (max-width: 600px){
+    .container__card{
+        display: block;
+    }
+}
