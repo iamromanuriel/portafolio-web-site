@@ -67,14 +67,6 @@ main{
     margin: 25px 0;
 }
 
-.hero__cta{
-    display: inline-block;
-    background: var(--color-btn);
-    color: #fff;
-    padding: var(--padding-btn);
-    text-align: center;
-    text-decoration: none;
-}
 .hero__img{
     width: 95%;
 }
@@ -221,7 +213,7 @@ footer{
         display: block;
     }
     .hero__container > img{
-        width: 100%;
+        width: 80%;
         margin: 2rem 0 0 0 ;
     }
 }

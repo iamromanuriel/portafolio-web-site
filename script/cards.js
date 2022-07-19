@@ -9,6 +9,7 @@ containermain.appendChild(containercards);
 var json = [
     {
         "title": "Lenguejes de programación",
+        "url": "/image/iconcode.svg",
         "elements":[
             "Java",
             "Kotlin",
@@ -17,6 +18,7 @@ var json = [
     },
     {
         "title": "Base de datos",
+        "url": "/image/bxs-data.svg",
         "elements":[
             "SQL",
             "MONGODB",
@@ -25,6 +27,7 @@ var json = [
     },
     {
         "title": "Herramientas",
+        "url": "/image/icontools.svg",
         "elements":[
             "Android studio",
             "Visual studio",
@@ -34,44 +37,35 @@ var json = [
 ]
 
 json.forEach(function(element){
-    createElement(element.title, element.elements)
+    createElement(element.title,element.url, element.elements)
 })
 
 
 
 //create elements
 
-function createElement(name, listelemento){
+function createElement(name,url, listelemento){
     const card = document.createElement("div");
     const leftcolumn = document.createElement("div");
     const rightcolumn = document.createElement("div");
     const div = document.createElement("div");
-    const containerlist = document.createElement("div");
 
     const h6 = document.createElement("h6");
-    const h2 = document.createElement("h2");
     const img = document.createElement("img");
     const listskin = document.createElement("ul");
 
-    const dificult = document.createElement("h4");
-    const medida = document.createElement("h6");
 
     h6.textContent = name;
-    h2.textContent = "Github";
-    img.src  = '/image/1DESIGN.png';
+    img.src  = url;
     
-    dificult.textContent = "Dificultad";
-    medida.textContent = "Media - baja";
     leftcolumn.appendChild(h6);
-    leftcolumn.appendChild(h2);
     leftcolumn.appendChild(img);
     card.appendChild(leftcolumn);
 
     rightcolumn.appendChild(div);
     
-    div.appendChild(dificult);
-    div.appendChild(medida);
     card.appendChild(rightcolumn);
+
     listelemento.forEach(function(skin){
         console.log(skin)
         let myskin = document.createElement("li");
@@ -86,6 +80,7 @@ function createElement(name, listelemento){
     //add class
     containercards.classList.add("container__card");
     card.classList.add("card");
+    img.classList.add("iconcard");
     leftcolumn.classList.add("left-column");
     rightcolumn.classList.add("right-column");
 
