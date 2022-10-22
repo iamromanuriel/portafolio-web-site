@@ -67,7 +67,6 @@ function createElement(name,url, listelemento){
     card.appendChild(rightcolumn);
 
     listelemento.forEach(function(skin){
-        console.log(skin)
         let myskin = document.createElement("li");
         myskin.textContent = skin;
         listskin.appendChild(myskin);

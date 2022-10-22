@@ -1,0 +1,46 @@
+:root{
+    --background-navbar-color:#34495e;
+    
+    --background-one-color:#7878FF;
+    --background-two-color:#FFB791;
+    --background-Three-color: #84FFEE;
+    --background-four-color:#4242B3;
+    --background-five-color:#63B34B;
+}
+.card_folder{
+    background-color: var(--background-one-color);
+    border-radius: 1rem;
+    width: 350px;
+    padding: 10px;
+    box-shadow: 0 1rem 1rem rgb(0,0,0,0.2);
+    margin: 1rem 0.3rem 1rem 0.3rem;
+}
+
+.card_folder > *{
+    margin: 0.5rem;
+}
+.card_folder > img{
+    width: 40px;    
+}
+.card_folder > a{
+    text-transform: uppercase;
+    border: 1px  solid transparent;
+}
+
+
+.card_container{
+    display: flex;
+    justify-content: center;
+}
+
+.container_element{
+    display: flex;
+}
+
+.container_element > *{
+    margin: 5px;
+}
+
+.iconElement{
+    height: 2rem;
+}
